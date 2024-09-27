@@ -19,7 +19,7 @@ on:
       - 'jlcpcb/*'
 
 env:
-  KIKIT: docker run --rm -v $PWD/Kicad/RLab Keyboard:/pcb -w /pcb --user $UID:$GROUPS yaqwsx/kikit kikit
+  KIKIT: docker run --rm -v "$PWD/Kicad/RLab Keyboard:/pcb" -w /pcb --user $UID:$GROUPS yaqwsx/kikit kikit
   schema: Kicad/RLab Keyboard/RLab Keyboard.kicad_sch
   board: Kicad/RLab Keyboard/RLab Keyboard.kicad_pcb
   name: RLab Keyboard
@@ -74,7 +74,7 @@ jobs:
           skip: run_erc,run_drc
           targets: ibom.html octopart.csv schematic.pdf schematic.svg board_top.pdf board_bottom.pdf model.step
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: ${{success()}}
         with:
           name: ${{github.event.repository.name}}_docs
