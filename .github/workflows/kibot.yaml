@@ -95,7 +95,7 @@ jobs:
 
     - name: Export JLCPCB fabrication files
       run: |
-        ${{ env.KIKIT }} fab jlcpcb --assembly --schematic ${{ env.schema }} --ignore J2,P1,P2,J3,U5 ${{ env.board }} ${{ env.name }}
+        ${{ env.KIKIT }} fab jlcpcb --assembly --schematic "${{ env.schema }}" "${{ env.board }}" "${{ env.name }}"
 
     - name: upload results
       uses: actions/upload-artifact@v3
