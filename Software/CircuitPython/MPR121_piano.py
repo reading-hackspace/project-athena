@@ -1,8 +1,8 @@
-# eCopyrightText: 2017 Tony DiCola, Carter Nelson for Adafruit Industries
+# SPDX-FileCopyrightText: 2017 Tony DiCola, Carter Nelson for Adafruit Industries
 # SPDX-License-Identifier: MIT
 
 # MPR121 piano demo.
-# Listens to the inputs of the MPR121 and plays a middle scale note
+# Listens to the first 7 inputs of the MPR121 and plays a middle scale note
 # when an input is touched.  Note only one note is played at a time!
 # For use with microcontrollers or computers with PWM support only!
 
@@ -20,18 +20,18 @@ BUZZER_PIN = board.GP15
 TONE_ON_DUTY = 2**15  # Duty cycle of tone when turned on, a square wave.
 TONE_OFF_DUTY = 0  # Duty cycle of tone when turned off, 0 or no signal.
 NOTE_FREQS = [
-    261,  # Input 0 = 261 hz = C4
-    277,  # Input 1 = C4#
-    294,  # Input 2 = D4
-    311,  # Input 3 = D4#
-    329,  # Input 4 = E4
-    349,  # Input 5 = F4
-    370,  # Input 6 = F4#
-    392,  # Input 7 = G4
-    415,  # Input 8 = G4#
-    440,  # Input 9 = A5
-    460,  # Input 10 = A5# 
-    493,  # Input 11 = B5
+    261,  # Input 0 = 261 hz = C4 = Midi 60
+    277,  # Input 1 = C4# = Midi 61
+    294,  # Input 2 = D4 = Midi 62
+    311,  # Input 3 = D4# = Midi 63
+    329,  # Input 4 = E4 = Midi 64
+    349,  # Input 5 = F4 = Midi 65
+    370,  # Input 6 = F4# = Midi 66 
+    392,  # Input 7 = G4 = Midi 67
+    415,  # Input 8 = G4# = Midi 68
+    440,  # Input 9 = A5 = Midi 69
+    460,  # Input 10 = A5# = Midi 70
+    493,  # Input 11 = B5 = Midi 71
 ]
 # Create I2C bus.
 i2c = busio.I2C(board.GP5, board.GP4)
@@ -64,5 +64,4 @@ while True:
         last_note = note
         buzzer.frequency = NOTE_FREQS[note]
         buzzer.duty_cycle = TONE_ON_DUTY
-
 

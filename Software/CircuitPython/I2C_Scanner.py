@@ -6,7 +6,7 @@
 import board
 import busio
 
-i2c = busio.I2C(board.GP15, board.GP14)
+i2c = busio.I2C(board.GP5, board.GP4)
 i2c.try_lock()
 print('Scan i2c bus...')
 devices = i2c.scan()

@@ -556,24 +556,6 @@
           "label": "Description",
           "name": "Description",
           "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Device",
-          "name": "Sim.Device",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Enable",
-          "name": "Sim.Enable",
-          "show": false
         }
       ],
       "filter_string": "",

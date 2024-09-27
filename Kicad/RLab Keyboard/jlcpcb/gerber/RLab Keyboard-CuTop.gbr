@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,8.0.4*%
-%TF.CreationDate,2024-09-11T14:22:17+01:00*%
+%TF.CreationDate,2024-09-11T16:00:36+01:00*%
 %TF.ProjectId,RLab Keyboard,524c6162-204b-4657-9962-6f6172642e6b,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Copper,L1,Top*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 8.0.4) date 2024-09-11 14:22:17*
+G04 Created by KiCad (PCBNEW 8.0.4) date 2024-09-11 16:00:36*
 %MOMM*%
 %LPD*%
 G01*
@@ -787,6 +787,7 @@ D15*
 %TO.N,unconnected-(A1-GPIO9-Pad12)_1*%
 X141110000Y-79810000D03*
 D36*
+%TO.N,unconnected-(A1-GPIO9-Pad12)*%
 X140210000Y-79810000D03*
 D14*
 %TO.P,A1,13,GND*%
@@ -892,9 +893,10 @@ D36*
 X159790000Y-79810000D03*
 D15*
 %TO.P,A1,30,RUN*%
-%TO.N,unconnected-(A1-RUN-Pad30)_1*%
+%TO.N,unconnected-(A1-RUN-Pad30)*%
 X158890000Y-77270000D03*
 D36*
+%TO.N,unconnected-(A1-RUN-Pad30)_1*%
 X159790000Y-77270000D03*
 D15*
 %TO.P,A1,31,GPIO26_ADC0*%
@@ -913,6 +915,7 @@ D14*
 %TO.N,unconnected-(A1-AGND-Pad33)_1*%
 X158890000Y-69650000D03*
 D36*
+%TO.N,unconnected-(A1-AGND-Pad33)*%
 X159790000Y-69650000D03*
 D15*
 %TO.P,A1,34,GPIO28_ADC2*%
@@ -925,6 +928,7 @@ D15*
 %TO.N,unconnected-(A1-ADC_VREF-Pad35)_1*%
 X158890000Y-64570000D03*
 D36*
+%TO.N,unconnected-(A1-ADC_VREF-Pad35)*%
 X159790000Y-64570000D03*
 D15*
 %TO.P,A1,36,3V3*%
@@ -934,9 +938,10 @@ D36*
 X159790000Y-62030000D03*
 D15*
 %TO.P,A1,37,3V3_EN*%
-%TO.N,unconnected-(A1-3V3_EN-Pad37)_1*%
+%TO.N,unconnected-(A1-3V3_EN-Pad37)*%
 X158890000Y-59490000D03*
 D36*
+%TO.N,unconnected-(A1-3V3_EN-Pad37)_1*%
 X159790000Y-59490000D03*
 D14*
 %TO.P,A1,38,GND*%
@@ -946,9 +951,10 @@ D36*
 X159790000Y-56950000D03*
 D15*
 %TO.P,A1,39,VSYS*%
-%TO.N,unconnected-(A1-VSYS-Pad39)*%
+%TO.N,unconnected-(A1-VSYS-Pad39)_1*%
 X158890000Y-54410000D03*
 D36*
+%TO.N,unconnected-(A1-VSYS-Pad39)*%
 X159790000Y-54410000D03*
 D15*
 %TO.P,A1,40,VBUS*%
