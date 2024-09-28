@@ -19,7 +19,7 @@ on:
       - 'jlcpcb/*'
 
 env:
-  KIKIT: docker run --rm -v "$PWD/Kicad/RLab Keyboard:/pcb" -w /pcb --user $UID:$GROUPS yaqwsx/kikit kikit
+  KIKIT: docker run --rm -v "$PWD:/pcb" -w /pcb --user $UID:$GROUPS yaqwsx/kikit
   schema: Kicad/RLab Keyboard/RLab Keyboard.kicad_sch
   board: Kicad/RLab Keyboard/RLab Keyboard.kicad_pcb
   name: RLab Keyboard
