@@ -97,6 +97,10 @@ jobs:
       run: |
         ${{ env.KIKIT }} fab jlcpcb --assembly --schematic "${{ env.schema }}" "${{ env.board }}" "${{ env.name }}"
 
+    - name: Generate stencil
+      run: |
+        ${{ env.KIKIT }} stencil createprinted "${{ env.board }}" "${{ env.name }}/stencil"
+  
     - name: upload results
       uses: actions/upload-artifact@v4
       with:
@@ -104,6 +108,7 @@ jobs:
         path: |
           ${{ env.name }}/*.zip
           ${{ env.name }}/*.csv
+          ${{ env.name }}/stencil/*
 
   release:
     name: Release
