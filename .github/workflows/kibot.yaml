@@ -19,7 +19,7 @@ on:
       - 'jlcpcb/*'
 
 env:
-  KIKIT: docker run --rm -v "$PWD/Kicad/RLab Keyboard:/pcb" -w /pcb --user $UID:$GROUPS yaqwsx/kikit kikit
+  KIKIT: docker run --rm -v "$PWD:/pcb" -w /pcb --user $UID:$GROUPS yaqwsx/kikit
   schema: Kicad/RLab Keyboard/RLab Keyboard.kicad_sch
   board: Kicad/RLab Keyboard/RLab Keyboard.kicad_pcb
   name: RLab Keyboard
@@ -97,6 +97,10 @@ jobs:
       run: |
         ${{ env.KIKIT }} fab jlcpcb --assembly --schematic "${{ env.schema }}" "${{ env.board }}" "${{ env.name }}"
 
+    - name: Generate stencil
+      run: |
+        ${{ env.KIKIT }} stencil createprinted "${{ env.board }}" "${{ env.name }}/stencil"
+  
     - name: upload results
       uses: actions/upload-artifact@v4
       with:
@@ -104,6 +108,7 @@ jobs:
         path: |
           ${{ env.name }}/*.zip
           ${{ env.name }}/*.csv
+          ${{ env.name }}/stencil/*
 
   release:
     name: Release
