@@ -128,24 +128,14 @@
 		(uuid "5f9a706a-29f9-4965-a482-143c0f98cfc9")
 	)
 	(fp_line
-		(start -2.6 -8.9)
-		(end 2.6 -8.9)
+		(start -2.6 -6.9)
+		(end 2.6 -6.9)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(layer "F.SilkS")
 		(uuid "f955dc05-95c2-477c-ac83-2491190c0c76")
-	)
-	(fp_line
-		(start -2.6 -6.9)
-		(end -2.6 -8.9)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "d9886798-c708-44b6-ab51-323c717199f8")
 	)
 	(fp_line
 		(start 2.35 5.3)
@@ -156,16 +146,6 @@
 		)
 		(layer "F.SilkS")
 		(uuid "3bc6c793-9a40-4067-b9d1-cd0876d3e1e2")
-	)
-	(fp_line
-		(start 2.6 -8.9)
-		(end 2.6 -6.9)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "219ef403-7d37-4aea-b4a3-19a505aa05a9")
 	)
 	(fp_line
 		(start 2.6 -6.9)
@@ -208,7 +188,7 @@
 		(uuid "14697e4b-41a2-4aeb-8a6d-846a6ed478f0")
 	)
 	(fp_line
-		(start -5 -9.31)
+		(start -5.0038 -6.8326)
 		(end -5 5.94)
 		(stroke
 			(width 0.05)
@@ -218,8 +198,8 @@
 		(uuid "2a2110f8-f932-4f1f-ba0e-67cf7e78006d")
 	)
 	(fp_line
-		(start -5 -9.31)
-		(end 5 -9.31)
+		(start -5.0038 -6.8326)
+		(end 4.9962 -6.8326)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -239,7 +219,7 @@
 	)
 	(fp_line
 		(start 5 5.94)
-		(end 5 -9.31)
+		(end 4.9962 -6.8326)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -268,16 +248,6 @@
 		(uuid "d5112101-f854-450b-8672-746d2a2c5aea")
 	)
 	(fp_line
-		(start -2.5 -8.8)
-		(end -2.5 -6.8)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "cf1d96ee-060b-4d9f-a912-9d0935bc6f08")
-	)
-	(fp_line
 		(start -2.5 -6.8)
 		(end -3 -6.8)
 		(stroke
@@ -288,24 +258,14 @@
 		(uuid "df4f62c1-d5a8-4f88-ac90-fe556aa6c9ce")
 	)
 	(fp_line
-		(start 2.5 -8.8)
-		(end -2.5 -8.8)
+		(start 2.4238 -6.7564)
+		(end -2.5762 -6.7564)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(layer "F.Fab")
 		(uuid "e0c1c1fc-6990-418e-b2f3-e13b83f6bb75")
-	)
-	(fp_line
-		(start 2.5 -6.8)
-		(end 2.5 -8.8)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "00eb655c-05a9-4704-a6dc-b7ab3c49ab66")
 	)
 	(fp_line
 		(start 3 -6.8)
