@@ -39,7 +39,7 @@ jobs:
           schema: ${{ env.schema }}
           board: ${{ env.board }}
           config: ${{ env.config }}
-          skip: run_drc
+          skip: drc
           targets: __NONE__
 
   DRC:
@@ -53,7 +53,7 @@ jobs:
           schema: ${{ env.schema }}
           board: ${{ env.board }}
           config: ${{ env.config }}
-          skip: run_erc
+          skip: erc
           targets: __NONE__
 
 # documentation
