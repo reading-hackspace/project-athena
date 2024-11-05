@@ -196,6 +196,11 @@
 	(net 75 "/DPAD_R")
 	(net 76 "unconnected-(U2-~{IRQ}-Pad1)")
 	(net 77 "Net-(R8-Pad2)")
+	(net 78 "unconnected-(A1-AGND-Pad33)")
+	(net 79 "unconnected-(A1-VSYS-Pad39)")
+	(net 80 "unconnected-(A1-ADC_VREF-Pad35)")
+	(net 81 "unconnected-(A1-3V3_EN-Pad37)_1")
+	(net 82 "unconnected-(A1-RUN-Pad30)_1")
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "01827e9f-1333-49c0-bb99-4544388764aa")
@@ -426,12 +431,12 @@
 		(layer "F.Cu")
 		(uuid "03170ebc-790f-4847-afc9-a47137733b1b")
 		(at 138.86 55.3325 -90)
-		(descr "SOT, 5 Pin (https://www.jedec.org/sites/default/files/docs/Mo-178c.PDF variant AA), generated with kicad-footprint-generator ipc_gullwing_generator.py")
+		(descr "SOT, 5 Pin (~), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U1"
 			(at 3.8075 -16.95 0)
 			(layer "F.SilkS")
-			(uuid "23192886-1acb-4561-9d13-b7db0cc3619a")
+			(uuid "81cd7016-9e43-44b0-a12b-40d0833fe8be")
 			(effects
 				(font
 					(size 1 1)
@@ -442,7 +447,7 @@
 		(property "Value" "LP5907MFX-3.3"
 			(at 0 2.4 90)
 			(layer "F.Fab")
-			(uuid "1efe59d3-92f0-40a9-917a-b32a7781b02a")
+			(uuid "1e555448-f345-4210-9cf1-cf59dc6f98c1")
 			(effects
 				(font
 					(size 1 1)
@@ -455,7 +460,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f993b0eb-f9b7-4847-8ede-79666c497a22")
+			(uuid "a46adfa2-b5c3-4b7e-9d7f-1c44deb3641c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -468,7 +473,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c43dbc38-0b90-4915-9677-441554c10c5e")
+			(uuid "ea3cf31c-be99-4bc4-b7f3-bdfa9baa039e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -481,7 +486,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "200e61f0-27bf-4222-a5f9-267fa94e2401")
+			(uuid "72d7df19-4990-4318-8925-24a664c8db9a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -515,7 +520,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "72e8ea65-ec2f-4d30-856e-3621f05ea274")
+			(uuid "f3465806-b73d-4e9d-a5f9-5a441a78410f")
 		)
 		(fp_line
 			(start 0 1.56)
@@ -525,7 +530,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "13e78352-74a2-408e-a14c-8b1a6304432f")
+			(uuid "86a9f37d-64d9-4fbf-ab56-0df98c1cab49")
 		)
 		(fp_line
 			(start 0 -1.56)
@@ -535,7 +540,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "93044900-fc88-4bb1-8561-a87b9d9ade08")
+			(uuid "8e12715e-4c01-4e56-b04c-b8ce52627fbd")
 		)
 		(fp_line
 			(start 0 -1.56)
@@ -545,7 +550,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "d175accc-0d81-4cad-be2b-0ee4c64f84d8")
+			(uuid "0603b899-de4e-4037-9778-9085bf4dd5ac")
 		)
 		(fp_poly
 			(pts
@@ -557,7 +562,7 @@
 			)
 			(fill solid)
 			(layer "F.SilkS")
-			(uuid "c300de46-4048-4224-b831-03f1751d4604")
+			(uuid "4b669488-b7c5-4848-b0f0-85b09278a17c")
 		)
 		(fp_line
 			(start -2.05 1.7)
@@ -567,7 +572,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "0e5e63a6-f617-4771-b477-8b43470e97c2")
+			(uuid "44a3aa3f-dccb-46ea-862d-d100b36424ea")
 		)
 		(fp_line
 			(start 2.05 1.7)
@@ -577,7 +582,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "1f232a98-e8a2-43bd-889d-65bb2ce652b2")
+			(uuid "d503938f-a838-4126-bed5-b2f85c39d3a6")
 		)
 		(fp_line
 			(start -2.05 -1.7)
@@ -587,7 +592,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "df0ae4e5-87e3-44c9-bb69-b368a82c2ee3")
+			(uuid "12cd3620-bceb-49e5-9f51-1ca75ee099d0")
 		)
 		(fp_line
 			(start 2.05 -1.7)
@@ -597,7 +602,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "024f3dfe-de94-4fbb-a93e-03f93cb80011")
+			(uuid "79aa17c4-153d-40e8-af6c-7a0bdfb7b7dc")
 		)
 		(fp_line
 			(start -0.8 1.45)
@@ -607,7 +612,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "6a162522-c0fa-42b4-8d37-99c48547bf48")
+			(uuid "593c2019-3c7e-4983-8163-f5b041f0b3a3")
 		)
 		(fp_line
 			(start 0.8 1.45)
@@ -617,7 +622,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "e6e37147-1b6e-43b6-a832-97e02e5e3fec")
+			(uuid "26e62289-b20e-4937-ac97-3fa08078fe3c")
 		)
 		(fp_line
 			(start -0.8 -1.05)
@@ -627,7 +632,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "19c575cb-e940-44d0-b6c4-fbe2992631a2")
+			(uuid "c6a2baed-4b21-4d78-8760-7be3dd0b175c")
 		)
 		(fp_line
 			(start -0.4 -1.45)
@@ -637,7 +642,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "38c17fea-abfc-492f-9f39-71b42b9bcad5")
+			(uuid "2bbf4848-1d23-4552-ad96-13c2ad088827")
 		)
 		(fp_line
 			(start 0.8 -1.45)
@@ -647,12 +652,12 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "4edc1f33-26bb-4fb5-a62f-2fd649763513")
+			(uuid "8c38835f-a766-400a-a2cc-c0af148f8084")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 90)
 			(layer "F.Fab")
-			(uuid "3952ac59-5115-48fd-bb2d-f4b7f862c28b")
+			(uuid "0864e6c4-5188-4761-9bf4-33c19f960cd4")
 			(effects
 				(font
 					(size 0.4 0.4)
@@ -668,7 +673,7 @@
 			(net 23 "+5V")
 			(pinfunction "IN")
 			(pintype "power_in")
-			(uuid "9c579828-ff84-427a-82d3-3ee2836d3758")
+			(uuid "8a5a6f03-b810-42f8-a5f1-4d6dc3c43665")
 		)
 		(pad "2" smd roundrect
 			(at -1.1375 0 270)
@@ -678,7 +683,7 @@
 			(net 14 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "9a95b0f7-b912-4e81-82e0-51c5948c794d")
+			(uuid "55a14606-7d7a-4d67-b212-ca395c92bacf")
 		)
 		(pad "3" smd roundrect
 			(at -1.1375 0.95 270)
@@ -688,7 +693,7 @@
 			(net 23 "+5V")
 			(pinfunction "EN")
 			(pintype "input")
-			(uuid "950c534e-0756-413b-9c92-94f97ac6b097")
+			(uuid "67b22bb9-94a2-4fbf-8558-9200476e6568")
 		)
 		(pad "4" smd roundrect
 			(at 1.1375 0.95 270)
@@ -698,7 +703,7 @@
 			(net 70 "unconnected-(U1-NC-Pad4)")
 			(pinfunction "NC")
 			(pintype "no_connect")
-			(uuid "449fad0d-8a22-4501-b614-ed4cc7541c4c")
+			(uuid "f96f5bad-a342-466c-a3cf-a7e8c01d4de1")
 		)
 		(pad "5" smd roundrect
 			(at 1.1375 -0.95 270)
@@ -708,7 +713,7 @@
 			(net 15 "+3.3VA")
 			(pinfunction "OUT")
 			(pintype "power_out")
-			(uuid "39f87e2e-71b4-4e3d-8652-012f61f24101")
+			(uuid "32c948b7-7c09-4381-8dba-ff82a380dd09")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.wrl"
 			(offset
@@ -17158,7 +17163,7 @@
 			(drill 1.02)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 51 "unconnected-(A1-RUN-Pad30)")
+			(net 82 "unconnected-(A1-RUN-Pad30)_1")
 			(pinfunction "RUN")
 			(pintype "input+no_connect")
 			(uuid "c5dde00a-7fe7-4404-a7db-5ac4682d2a42")
@@ -17239,7 +17244,7 @@
 				(offset 0.9 0)
 			)
 			(layers "F.Cu" "F.Mask")
-			(net 33 "unconnected-(A1-AGND-Pad33)_1")
+			(net 78 "unconnected-(A1-AGND-Pad33)")
 			(pinfunction "AGND")
 			(pintype "power_out+no_connect")
 			(uuid "2ee1f068-4c4c-44f8-bed8-fc50024a7ea6")
@@ -17273,7 +17278,7 @@
 			(drill 1.02)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 50 "unconnected-(A1-ADC_VREF-Pad35)_1")
+			(net 80 "unconnected-(A1-ADC_VREF-Pad35)")
 			(pinfunction "ADC_VREF")
 			(pintype "power_in+no_connect")
 			(uuid "4fe1fb23-ec6c-4ccf-a01e-1a1f099c24de")
@@ -17331,7 +17336,7 @@
 				(offset 0.9 0)
 			)
 			(layers "F.Cu" "F.Mask")
-			(net 58 "unconnected-(A1-3V3_EN-Pad37)")
+			(net 81 "unconnected-(A1-3V3_EN-Pad37)_1")
 			(pinfunction "3V3_EN")
 			(pintype "input+no_connect")
 			(uuid "83cbe514-822e-4aa1-bab7-e58baba67a7d")
@@ -17377,7 +17382,7 @@
 				(offset 0.9 0)
 			)
 			(layers "F.Cu" "F.Mask")
-			(net 52 "unconnected-(A1-VSYS-Pad39)_1")
+			(net 79 "unconnected-(A1-VSYS-Pad39)")
 			(pinfunction "VSYS")
 			(pintype "power_in+no_connect")
 			(uuid "336a22cb-c340-4c46-94ba-6e0fe22e89a4")
