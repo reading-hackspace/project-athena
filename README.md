@@ -1,6 +1,6 @@
 # Project Athena
 
-A simple project to build and learn electronics and embedded design
+A simple project to build and learn electronics and embedded design at rLab
 
 ![Project Athena 3D](./images/Project_Athena_3D.jpg)
 
@@ -9,12 +9,12 @@ A simple project to build and learn electronics and embedded design
 <li>Develop individual and shared electronic design skills</li>
 <li>Learn PCB design and build techniques with Kicad and external PCB manufacturers</li>
 <li>Improve surface mount and through hole soldering skills</li>
-<li>Familiarise with rLab electronics tools, equipment, and knowledge</li>
+<li>Familiarise members with rLab electronics tools, equipment, and knowledge</li>
 <li>Make a fun device</li>
 </ul>
 
 ## Design Specification
-Derived from the previous 555 Synth Punk build project
+Derived from the previous 555 Synth Punk construction project
 <ul>
 <li>design should be Microprocessor based rather than 555</li>
 <li>It should have a keyboard. This could be buttons, stylophone, touch sensor, or other. Probably single octave.</li>
@@ -25,7 +25,7 @@ Derived from the previous 555 Synth Punk build project
 <li>Audio output jack</li>
 <li>Mixture of surface mount and through hole components</li>
 <li>LCD display integral</li> 
-<li>Expansion connector to add new personalised features</li>
+<li>Expansion connector to add new personalised features</li>v
 <li>C++ or Python programming.</li>
 </ul>
 
@@ -55,7 +55,7 @@ A number of different keyboard switch types were considered including push buttt
 A few different alternatives for the capacitive touch keyboard layout and interface were tested. The keyboard was prototyped with copper tape covered in kapton tape to simulate the PCB pads and solder mask in the final PCB. The Pi Pico does support direct connection of GPIO pins to interface capacitive touch switches using the CircuitPython [touchio library](https://docs.circuitpython.org/en/latest/shared-bindings/touchio/index.html), However it uses a lot of GPIO pins for a 12 key keyboard. It was decided to us a specialised Capacitive touch chip with and I2C interface [MPR121](https://www.nxp.com/docs/en/data-sheet/MPR121.pdf). This chip is very small and will present a good challenge in construction, however it is available already mounted on low cost modules for prototyping. The chip supports up to 4 different I2C addresses allowing additional octave to be added.
 
 ### PWM Audio Output
-The Pi Pico supports PWM output to a GPIO pin for audio tone output. The resulting output is rather noisy as described in section 3.4.1 of the  [RP2040 hardware interface manual](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf). It was choseb to implement the low noise 3.3V audio supply, the buffer, and the filter circuit.
+The Pi Pico supports PWM output to a GPIO pin for audio tone output. The resulting output is rather noisy as described in section 3.4.1 of the  [RP2040 hardware interface manual](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf). It was chosen to implement the low noise 3.3V audio supply, the buffer, and the filter circuit.
 
 ### I2S Audio Codec
 In addition to the PWM a I2S audio DAC is included for higher quality stereo output. The [PCM5102 DAC](https://www.ti.com/lit/ds/symlink/pcm5102.pdf) analog part is also powered from the low noise 3.3V supply
@@ -72,7 +72,7 @@ The loudspeaker is proposed to be board mounted.[30mm Loudspeaker](https://proto
 Audio Output to an external amplifier is provided via a 3.5mm stereo jack.
 
 
-### 1.3 inch IPs Colour LCD Display
+### 1.3 inch IPS Colour LCD Display
 ![LCD Image](./images/LCD_Image_240.jpg)
 
 A colour LCD display was chosen for the device. Limited space allows for a [240 by 240 pixel 1.3 inch IPS display](https://www.smart-prototyping.com/1_3-inch-TFT-IPS-Display-Module-ST7789-SPI-240-240).
@@ -80,11 +80,11 @@ The module is based on the ST7789 display IC and is supported by both Micropytho
 
 ### Buttons and Potentiometers.
 
-To interact with the device and display, two potentiometers and two push buttons are included.
+To interact with the device and display, two potentiometers and six push buttons are included.
 
 ### General Purpose Inputs and Outputs.
 
-The board provides spare GPIO connections and power supplies on 2.54mm female headers for external experimental devices. The I2c Bus is also brought out to a connector to daisy chain octaves or add other I2C devices.
+The board provides spare GPIO connections and power supplies on 2.54mm female headers for external experimental devices. The I2c Bus is also brought out to a connectors to daisy chain octaves or add other I2C devices. The connectors can be male or female and mounted vertically or horizontally on the board
 
 
 ##   Estimated Costs
@@ -105,6 +105,14 @@ Total:
 ## PCB Files
 
 ## Software
+
+The software is in early stage of test and development. The following capabilities have been tested:
+<ul>
+<li> Display colour rLab logo on LCD display in Circuit Python
+<li> SImple one octave piano with output to internal speaker
+<li> Polyphonic synthesiser with output via audio codec
+<li> Nintendo style games (Tetris, Flappy Bird) with display and sound
+<ul>
 
 
 
